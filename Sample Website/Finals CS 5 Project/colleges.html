@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Administration </title>
+  <style>
+
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    nav.bottom-nav {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-nav .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .bottom-nav .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .bottom-nav .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+
+    .middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+    }
+
+    .middle-nav p {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: italic;
+    }
+
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 60px;
+    }
+
+
+    .left-section {
+      max-width: 700px;
+      padding-left: 40px;
+      flex: 2;
+    }
+
+    .left-section p {
+      margin-bottom: 20px;
+    }
+
+    .image-links {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .image-box {
+      text-align: center;
+      width: 150px;
+    }
+
+    .image-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+    .image-box img:hover {
+      transform: scale(1.1);
+    }
+
+    .image-box span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav class="Topbar">
+    <a href="homepage.html"> Home </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="colleges.html"> Colleges </a>
+    <a href="archives.html"> Archives </a>
+    <a href="contactus.html"> Contact Us </a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+    <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  <nav class="middle-nav">
+    <a href="colleges.html"> <p> >>Colleges </p> </a>
+  </nav>
+
+
+
+  <div class="content-wrapper">
+
+
+    <div class="left-section">
+      <hr>
+      <p>
+        
+      </p>
+  
+      <div class="image-links">
+        <div class="image-box">
+          <a href="collegeofscience.html">
+            <img src="Photos/Misc/coslogo.jpg" alt="Cos Logo">
+            <span> College of Science </span>
+          </a>
+        </div>
+  
+        <div class="image-box">
+          <a href="collegeofteducation.html">
+            <img src="Photos/Misc/coelogo.jpg" alt="Coe Logo">
+            <span> College of Education </span>
+          </a>
+        </div>
+  
+        <div class="image-box">
+          <a href="collegeofengineering.html">
+            <img src="Photos/Misc/coenglogo.jpg" alt="Coeng Logo">
+            <span> College of Engineering</span>
+          </a>
+        </div>
+
+        <div class="image-box">
+          <a href="collegeoftechnology.html">
+            <img src="Photos/Misc/citlogo.jpg" alt="Cit Logo">
+            <span> College of Technology </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

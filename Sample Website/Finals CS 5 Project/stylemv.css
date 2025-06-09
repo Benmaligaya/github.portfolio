@@ -1,0 +1,147 @@
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    .middle-nav {
+      background-color: grey;
+    }
+
+    nav.bottom-nav {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-nav .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .bottom-nav .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .bottom-nav .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+      .middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+    }
+
+    .middle-nav p {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: italic;
+    }
+
+
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+
+    .left-paragraph {
+      flex: 1;
+      text-align: left;
+      width: 60%;
+      margin-left: 30px;
+    }
+
+    .left-paragraph p {
+      padding: 15px;
+      background-color: #f8f9fa;
+      color: #333;
+      text-align: left;
+    }
+
+    .left-paragraph h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #0f4c8d;
+    }
+
+
+   
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+
+    .links a {
+      border: 2px solid #007bff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
+    }
+
+    .links a:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  

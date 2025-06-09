@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archives</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    nav.downbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .downbar .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .downbar .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .downbar .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+    .middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .middle-nav p {
+      color: #333;
+      font-size: 15px;
+      font-style: italic;
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 60px;
+      padding: 20px;
+    }
+
+    .left-section {
+      max-width: 1300px;
+      flex: 2;
+    }
+
+    .left-section p {
+      margin-bottom: 20px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .image-gallery img {
+      width: 290px;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: -10px;
+    }
+
+    .links a {
+      border: 2px solid #007bff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .links a:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="Topbar">
+    <a href="homepage.html"> Home </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="colleges.html"> Colleges </a>
+    <a href="archives.html"> Archives </a>
+    <a href="contactus.html"> Contact Us </a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+      <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  <nav class="middle-nav">
+    <p> >>Archives </p>
+  </nav>
+
+  <div class="content-wrapper">
+    <div class="left-section">
+      <hr>
+      <p>Welcome to the Archive section of this website. Feel free to look at pictures of our facilities:</p>
+
+      <div class="image-gallery">
+        <img src="Photos/Misc/492769613_122150906426473673_7591578351264347878_n.jpg" width="300px" alt="Cos View">
+        <img src="Photos/Misc/386864028_1574945589928474_2867996399880822268_n.jpg" width="300px" alt="Cos Building">
+        <img src="Photos/Misc/ilovecos.jpg" alt="Cos Building">
+        <img src="Photos/Misc/NSTP3.jpg" alt="Cos Building">
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="Organizational.html"> Organizational Structure </a>
+      <a href="Board.html"> Board of Regents </a>
+    </div>
+  </div>
+
+</body>
+</html>

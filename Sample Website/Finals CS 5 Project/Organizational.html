@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> About Us </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    .middle-nav {
+      background-color: grey;
+    }
+
+    nav.bottom-nav {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-nav .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .bottom-nav .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .bottom-nav .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+      .middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+    }
+
+    .middle-nav p {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: italic;
+    }
+
+
+
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+
+    .left-paragraph {
+      flex: 1;
+      text-align: left;
+    }
+
+    .left-paragraph p {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+
+    .image-box img:hover {
+      transform: scale(1.1);
+    }
+
+    .image-box span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 55px;
+    }
+
+    
+ .right-sidebar {
+  width: 230px;
+  flex-shrink: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-left: -40px;
+}
+
+.links a {
+  border: 2px solid #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: white;
+  display: block;
+}
+
+.links a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+    .left-section {
+      max-width: 700px;
+      padding-left: 40px;
+      flex: 2;
+    }
+
+    .left-section p {
+      margin-bottom: 20px;
+    }
+
+    .image-links {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .image-box {
+      text-align: center;
+      width: 300px;
+    }
+
+    .image-box img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+    .image-box img:hover {
+      transform: scale(1.1);
+    }
+
+    .image-box span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+    .enlargeable-image {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.enlargeable-image input[type="checkbox"] {
+  display: none;
+}
+
+.enlargeable-image label {
+  display: inline-block;
+  cursor: zoom-in;
+}
+
+.enlargeable-image img {
+  width: 100%;
+  max-width: 1000px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.enlargeable-image input:checked + label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  z-index: 1000;
+}
+
+.enlargeable-image input:checked + label img {
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: none;
+  border: 4px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255,255,255,0.2);
+}
+.left-paragraph {
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px; 
+    align-items: flex-start; 
+}
+  </style>
+</head>
+<body>
+
+
+  <nav class="Topbar">
+    <a href="homepage.html"> Home </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="colleges.html"> Colleges </a>
+    <a href="archives.html"> Archives </a>
+    <a href="contactus.html"> Contact Us </a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+    <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  <nav class="middle-nav">
+    <p> >>Archives </p>
+  </nav>
+
+
+  <div class="content-section">
+  
+        <div class="left-paragraph">
+         
+            <div class="enlargeable-image">
+              <input type="checkbox" id="img-toggle1">
+              <label for="img-toggle1">
+                <img src="Photos/Misc/1STRUCT.png" alt="Campus 1" class="clickable-img">
+                <div class="overlay"></div>
+              </label>
+            </div>
+          
+     
+            <div class="enlargeable-image">
+              <input type="checkbox" id="img-toggle2">
+              <label for="img-toggle2">
+                <img src="Photos/Misc/2NDSTRUCT.png" alt="Campus 2" class="clickable-img">
+                <div class="overlay"></div>
+              </label>
+            </div>
+          </div>
+
+    <div class="links">
+        <a href="archives.html"> Archives </a>
+        <a href="Board.html"> Board of Regents </a>
+      </div>
+    
+    </div>
+  
+  
+  </body>
+  </html>

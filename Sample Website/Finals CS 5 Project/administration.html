@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administration</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    nav.downbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .downbar .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .downbar .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .downbar .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+    .middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+    }
+
+    .middle-nav p {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: italic;
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 60px;
+      padding: 20px;
+    }
+
+    .left-section {
+      max-width: 900px;
+      flex: 2;
+    }
+
+    .left-section p {
+      margin-bottom: 20px;
+    }
+
+    .image-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: flex-start;
+    }
+
+    .image-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 200px;
+      min-height: 280px;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    .image-box img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 2px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-box img:hover {
+      transform: scale(1.1);
+    }
+
+    .image-box span {
+      margin-top: 10px;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: -10px;
+      margin-right: 10px;
+    }
+
+    .links a {
+      border: 2px solid #007bff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .links a:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="Topbar">
+    <a href="homepage.html"> Home </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="colleges.html"> Colleges </a>
+    <a href="archives.html"> Archives </a>
+    <a href="contactus.html"> Contact Us </a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+      <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  <nav class="middle-nav">
+    <a href="aboutus.html"><p> >>About Us </p></a>
+    <p> >>Administration </p>
+  </nav>
+
+  <div class="content-wrapper">
+    <div class="left-section">
+      <hr>
+      <p>The Administration of University of Rizal System, Morong:</p>
+
+      <div class="image-links">
+        <div class="image-box">
+          <img src="Photos/administration/urspresident.png" alt="President">
+          <span>Dr. Nancy Talavera-Pascual<br>The President</span>
+        </div>
+        <div class="image-box">
+          <img src="Photos/administration/drallan.png" alt="VP1">
+          <span>Dr. Allan E. Conde<br>Vice-President for Academic Affairs</span>
+        </div>
+        <div class="image-box">
+          <img src="Photos/administration/dramoin.png" alt="VP2">
+          <span>Dr. Marvin P. Amoin<br>Vice-President for Administration and Finance</span>
+        </div>
+        <div class="image-box">
+          <img src="Photos/administration/drmarites.png" alt="VP3">
+          <span>Dr. Marites M. Rio<br>Vice-President for RDE and Production</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="mvcv.html"> Mission, Vision, Core Values </a>
+      <a href="qualitypolicy.html"> Quality Policy </a>
+      <a href="administration.html"> Administration </a>
+    </div>
+  </div>
+
+  <nav class="downbar">
+    <div class="nav-item"> <a href="aboutuswebsitecreators.html"> Website Makers </a> </div>
+  </nav>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> The President </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    .middle-nav {
+      background-color: grey;
+    }
+
+    nav.bottom-nav {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-nav .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .bottom-nav .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .bottom-nav .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+  
+  
+    .middle-nav {
+            background-color: #ddd;
+            padding: 10px 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+    .middle-nav a { 
+            color: #333;
+            text-decoration: none;
+            font-size: 15px;
+            font-style: italic;
+        }
+
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+
+    .left-section {
+      flex-grow: 1;
+    }
+
+    .left-section h2 {
+      color: #333;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .left-section h1 {
+      color: #0f4c8d;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .img-with-side-paragraph {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .img-stack {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .img-stack img {
+      width: 450px;
+      height: 450px;
+      border-radius: 10px;
+      border: 2px solid #999;
+      margin-left: 10px;
+    }
+
+    .image-title {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .img-side-text {
+      flex-grow: 1;
+      padding: 15px;
+      background-color: #ddd6d6;
+      color: #333;
+    }
+
+    .left-section .main {
+      padding: 15px;
+      background-color: #ddd6d6;
+      color: #333;
+      text-align: left;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-right: 37px;
+      margin-top: 27px;
+    }
+
+    .links a {
+      border: 2px solid #007bff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: white;
+    }
+
+    .links a:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <nav class="Topbar">
+    <a href="homepage.html"> Home </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="colleges.html"> Colleges </a>
+    <a href="archives.html"> Archives </a>
+    <a href="contactus.html"> Contact Us </a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+    <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  <nav class="middle-nav">
+    <a href="colleges.html"> <p> >>Colleges </p> </a>
+    <a href="collegeofengineering.html"> <p> >>College of Engineering </p> </a>
+    <a href="coengdean.html"><p> >>The Dean of College of Engineering </p> </a>
+  </nav>
+
+  <div class="content-wrapper">
+
+    <div class="left-section">
+      <hr>
+      <h1> The Dean of College of Engineering </h1>
+
+      <div class="img-with-side-paragraph">
+        <div class="img-stack">
+          <img src="Photos/Deans/Engr. Michael L. Pascua.jpg" alt="Engr. Michael L. Pascua">
+          <h2 class="image-title"> Engr. Michael L. Pascua </h2>
+          <hr>
+        </div>
+        <div class="img-side-text">
+          About the Dean: Engr. Michael L. Pascua serves as the Dean of the College of Engineering at <br>
+           the University of Rizal System (URS) Morong Campus. In this role, he oversees<br>
+            academic programs and initiatives within the college.In addition to his administrative duties, <br>
+             Engr. Pascua is an Assistant Professor in the College of Engineering. He is also involved in the <br>
+             University Physical Facilities Development Unit, contributing to the development and<br>
+              maintenance of the university's infrastructure. ​
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="links">
+      <a href="collegeofengineering.html"> Back to Previous Page </a>
+      <a href="coengcourses.html"> Courses Offered </a>
+    </div>
+  
+  </div>
+
+
+</body>
+</html>

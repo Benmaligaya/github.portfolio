@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    .middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+    }
+
+    .middle-nav p {
+      color: #333;
+      font-size: 15px;
+      font-weight: italic;
+    }
+
+    nav.bottom-nav {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-nav .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .bottom-nav .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .bottom-nav .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+  
+    .content-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 1521px;
+    }
+
+    .image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+
+}
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 60px);
+      text-align: center;
+      color: white;
+      opacity: 0;
+      animation: fadeUpCenter 1.5s ease-out forwards;
+      animation-delay: 0.2s;
+      padding: 0 20px;
+      max-width: 90%;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .overlay-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .overlay-text p {
+      font-size: 20px;
+    }
+
+    @keyframes fadeUpCenter {
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="Topbar">
+    <a href="homepage.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="colleges.html">Colleges</a>
+    <a href="archives.html">Archives</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+      <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  <nav class="middle-nav">
+    <p>> Home</p>
+  </nav>
+
+  <div class="content-section">
+    <div class="image-container">
+      <img src="Photos/background/Untitled design (1).jpg" alt="Background image">
+      <div class="overlay-text">
+        <h2>Welcome to the University of Rizal System Morong Campus</h2>
+        <p>Empowering lives through Quality education, Research, Responsiveness, Integrity and Environmental stewardship.</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

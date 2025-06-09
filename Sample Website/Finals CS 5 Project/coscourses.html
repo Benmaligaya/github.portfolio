@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Vice-President for Academic Affairs </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    .middle-nav {
+      background-color: grey;
+    }
+
+    nav.bottom-nav {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-nav .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .bottom-nav .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .bottom-nav .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+      .middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+    }
+
+    .middle-nav p {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: italic;
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+
+    .left-section {
+      flex-grow: 1;
+    }
+
+    .left-section h2 {
+      color: #333;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .left-section h3 {
+      color: #333;
+      margin-bottom: 2px;
+      text-align: center;
+    }
+
+    .left-section h1 {
+      color: #0f4c8d;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .img-with-side-paragraph {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .img-stack {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .img-stack img {
+      width: 350px;
+      height: 500px;
+      border-radius: 10px;
+      border: 2px solid #999;
+      margin-left: 10px;
+    }
+
+    .image-title {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .img-side-text {
+      flex-grow: 1;
+      padding: 15px;
+      background-color: #ddd6d6;
+      color: #333;
+    }
+
+    .left-section .main {
+      padding: 15px;
+      background-color: #ddd6d6;
+      color: #333;
+      text-align: left;
+      margin-top: 20px;
+      width: 100%;
+    }
+    .courses-container {
+            margin: 20px; 
+            text-align: center;
+        }
+
+        .course-title {
+            color: navy;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .specializations-list {
+            padding-left: 20px; 
+            margin-bottom: 10px; 
+            text-align: center;
+        }
+
+        .specialization-item {
+            color: #555;
+        }
+
+
+        .course-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      flex: 3;
+      padding: 20px;
+    }
+
+    .course-box {
+      flex: 1 1 calc(20% - 20px);
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      min-width: 150px;
+    }
+
+    .course-box p {
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <nav class="Topbar">
+    <a href="homepage.html"> Home </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="colleges.html"> Colleges </a>
+    <a href="archives.html"> Archives </a>
+    <a href="contactus.html"> Contact Us </a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+    <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  <nav class="middle-nav">
+    <a href="colleges.html"> <p> >>Colleges </p> </a>
+    <a href="collegeofscience.html"> <p> >>College of Science </p> </a>
+    <a href="coscourses.html"> <p> >>Courses </p> </a>
+    <p> </p>
+  </nav>
+
+  
+
+  <div class="content-wrapper">
+
+        </div>
+      </div>
+      <div class="courses-container">
+        <h2>Courses Offered:</h2>
+       <div class="course-boxes">
+        <div class="course-box">
+            <p class="course-title">Bachelor of Science in Biology Major in:</p>
+            <ul class="specializations-list" style="list-style-type: none; padding-left: 0;">
+                <li class="specialization-item">Microbiology</li>
+                <p2>Bachelor of Science in Biology is a four-year program that provides its students the opportunity to integrate, interpret, and translate biological phenomena through scientific observations and environmental observations, and use this information to make meaningful decisions, with emphasis on its applications in the environment, medical field, and the industry.</p2>
+        </div>
+      </div>
+      <div class="course-boxes">
+      <div class="course-box">
+            <p class="course-title">Bachelor of Science in Computer Science</p>
+            <p2>The BS Computer Science course is a four-year focused course on learning and studying computers and computational systems, algoriithms and computer languages, development of software, web design and application development, while including the ethics of program making and usage. </p2>
+      </div>
+      </div>
+      <div class="course-boxes">
+      <div class="course-box">
+            <p class="course-title">Bachelor of Science in Human Services</p>
+            <p2>BS in Human Services is a four-year course designed to train professionals who can assist individuals and communities to function effectively across major domains of living, which are related to mental health and wellbeing.</p2>
+      </div>
+      </div>
+      <div class="course-boxes">
+      <div class="course-box">
+            <p class="course-title">Bachelor of Science in Mathematics</p>
+            <p2>The BS Mathematics program is a four-year course that seeks to develop and enhance students' mathematical skills necessary in pursuing careers in the academe, research institutions and areas of work requiring analytical and critical thinking.</p2>
+      </div>
+      </div>
+      <div class="course-boxes">
+     <div class="course-box">
+            <p class="course-title">Bachelor of Science in Psychology</p>
+            <p2>BS Psychology is an undergraduate program that takes a science-oriented approach to studying behavior and mental processes. It emphasizes learning analytical, research, and statistical skills with a curriculum including research methods, statistics, and natural sciences.</p2>
+     </div>
+      </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

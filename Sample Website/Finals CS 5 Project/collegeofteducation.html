@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College of Education</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+body {
+      margin: 0;
+      height: 700px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-image: url(Photos/background/Untitled\ design\ \(1\).jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .Topbar {
+      background-color: rgba(15, 76, 141, 0.9);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    .logo-bar {
+      background-color: rgba(18, 92, 172, 0.9);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+    .middle-nav {
+      background-color: rgba(221, 221, 221, 0.9);
+      padding: 25px 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .middle-nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-style: italic;
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 55px;
+      padding: 20px;
+    }
+
+    .text-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px solid #333;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 1200px;
+      flex: 2;
+    }
+
+    .text-container h2 {
+      margin: 0;
+      color: #333;
+      font-size: 34px;
+    }
+
+    .right-sidebar {
+      flex: 1;
+      max-width: 250px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-right: 30px;
+      margin-top: 10px;
+    }
+
+    .links a {
+      border: 2px solid #007bff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: white;
+    }
+
+    .links a:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="Topbar">
+    <a href="homepage.html"> Home </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="colleges.html"> Colleges </a>
+    <a href="archives.html"> Archives </a>
+    <a href="contactus.html"> Contact Us </a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+      <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  <nav class="middle-nav">
+    <a href="colleges.html"> >>Colleges </a>
+    <a href="collegeofteducation.html"> >>College of Education </a>
+  </nav>
+
+  <div class="content-wrapper">
+    <div class="text-container">
+      <h2>
+        The College of Education empowers future educators through innovative programs and hands-on learning. 
+        It fosters critical thinking, inclusivity, and lifelong learning, equipping students to inspire and lead 
+        in schools and communities, shaping the future of education with passion and purpose.
+      </h2>
+    </div>
+    <div class="right-sidebar">
+      <div class="links">
+        <a href="coedean.html">Meet the Dean</a>
+        <a href="coecourses.html">Courses Offered</a>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

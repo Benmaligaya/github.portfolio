@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background: url('your-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .Topbar {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Topbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 15px;
+      border-right: 1px solid white;
+      transition: color 0.6s;
+    }
+
+    .Topbar a:hover {
+      color: #ffeb3b;
+    }
+
+    .Topbar a:last-child {
+      border-right: none;
+    }
+
+    .logo-bar {
+      background-color: #125cac;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 100px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      opacity: 0.6;
+    }
+
+    nav.bottom-nav {
+      background-color: #0f4c8d;
+      padding: 10px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-nav .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .bottom-nav .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .bottom-nav .nav-item a:hover {
+      color: #c4d61c;
+    }
+
+    .middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+    }
+
+    .middle-nav p {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: italic;
+    }
+
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .faculty-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      flex: 3;
+      padding: 20px;
+    }
+
+    .faculty-box {
+      flex: 1 1 calc(20% - 20px);
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      min-width: 150px;
+    }
+
+    .faculty-box p {
+      margin: 0;
+    }
+
+.right-sidebar {
+  width: 230px;
+  flex-shrink: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: -25px;
+}
+
+.links a {
+  border: 2px solid #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: white;
+  display: block;
+}
+
+.links a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.middle-nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .middle-nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="Topbar">
+    <a href="homepage.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="colleges.html">Colleges</a>
+    <a href="archives.html">Archive</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+
+  <div class="logo-bar">
+    <a href="homepage.html">
+      <img src="urs logo placeholder.png" alt="URS Logo">
+    </a>
+  </div>
+
+  
+
+  <nav class="middle-nav">
+    <a href="colleges.html"> <p> >>Colleges </p> </a>
+    <a href="collegeofscience.html"> <p> >>College of Science </p> </a>
+    <p> </p>
+  </nav>
+
+  <div class="content-section">
+    <div class="faculty-boxes">
+      <div class="faculty-box">
+        <h2> Human Services </h2>
+        <p>
+          Dr. Florencia V. Baustista<br>
+          Dr. Debbie G. San Jose
+          Dr. Lilibeth R. Roldan<br>
+          Dr. Wilhelmina P. Masinsin<br>
+          Prof. Reymily Rose R. Sta. Ana<br>
+          Prof. Eva F. Tubircio<br>
+          Prof. Ruby S. San Juan
+        </p>
+      </div>
+      <div class="faculty-box">
+        <h2> Biology </h2>
+        <p>
+          Prof. Nenita L. Dela Cruz<br>
+          Prof. Eduardo D. Gatchalian<br>
+          Prof. Edmund B. Capuz<br>
+          Prof. Tia Eugene<br>
+          Prof. Therence Olvida<br>
+          prof. Jobelle Dl. Palino<br>
+          Prof. Renz Cedrick M. Cequena<br>
+          Prof. Matthew M. Lubag<br>
+          Prof. Cristina G. Millare<br>
+          Prof. Alana R. Buenviaje
+        </p>
+      </div>
+      <div class="faculty-box">
+        <h2> Mathematics </h2>
+        <p>
+          Dr. Ricardo R. Ariston<br>
+          Dr. Aireen C. Matimatico<br>
+          Prof.Shiela Marie F. Dela Cruz<br>
+          Dr. Jose E. Binaluyo<br>
+          Prof. Grace Ann J. Lopez<br>
+          Prof. Ciar G. Renante<br>
+          Prof. Ken Russel Z. Guitierrez
+        </p>
+      </div>
+      <div class="faculty-box">
+        <h2> Psychology </h2>
+        <p>
+          Dr. Nicile L. Tiratira<br>
+          Dr. Mariam M. Estrabo<br>
+          Prof. Maninllie Liwayway T. Herrera<br>
+          Prof. Czarina Ann B. Alfonso<br>
+          Prof. Jeremy R. Aterrado<br>
+          Prof. Norlyn SJ. Mendiola<br>
+          Prof.Pia Rose M. Bendana
+        </p>
+      </div>
+      <div class="faculty-box">
+        <h2> Computer science </h2>
+        <p>
+          Prof. Michael B. Fransisco<br>
+          Prof. Maria Cecilia P. San Jose<br>
+          Dr. Yvette S. Garrovillas<br>
+          Prof. John Emmanuel SJ. Dela Cruz<br>
+          Prof. Gretchen B. Ortal<br>
+          Prof. Lindy A. Alejandro
+        </p>
+      </div>
+    </div>
+
+    <div class="right-sidebar">
+      <div class="links">
+        <a href="cosdean.html">Meet the Dean</a>
+        <a href="organizationalstructure.html">Organizational Structure</a>
+        <a href="coscourses.html">Courses Offered</a>
+        <a href="CosOrgs.html">Orgs</a>
+        <a href="coecourses.html">COS News and Events</a>
+        <a href="collegeofscience.html">Back to Previous Page</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

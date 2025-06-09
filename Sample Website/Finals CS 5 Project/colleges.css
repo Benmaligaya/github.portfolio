@@ -1,0 +1,34 @@
+.container {
+    display: flex; 
+    width: 100%; 
+ 
+  }
+  
+  .left-content {
+    flex: 1; 
+    padding-right: 20px; 
+  }
+  
+  .right-sidebar {
+    width: auto; 
+    padding-left: 20px; 
+  }
+  
+  .right-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 15px;
+  }
+  
+  .right-links a {
+    border: 2px solid #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: right;
+    display: inline-block;
+  }
